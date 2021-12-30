@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Navbar} from "react-bootstrap";
-import {BrowserRouter, BrowserRouter as Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 import MainComponent from "../MainComponent"
 import DashboardComponent from "../Dashboard"
@@ -21,8 +21,8 @@ class TopMenuComponent extends Component {
                     </Navbar.Brand>
                 </Navbar>
                 <Routes>
-                    <Route path="/main" element={<DashboardComponent/>}/>
-                    <Route path="/dashboard" element={<MainComponent/>}/>
+                    <Route path="/main" element={<MainComponent/>}/>
+                    <Route path="/dashboard" element={<DashboardComponent/>}/>
                 </Routes>
             </BrowserRouter>
         )
