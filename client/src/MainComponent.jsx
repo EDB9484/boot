@@ -29,11 +29,13 @@ class MainComponent extends Component {
     }
 
     render() {
+        const btnName = '테스트';
+        const mainName = '메인 페이지';
         return (
             <div>
-                Main 페이지
+                {mainName}
                 <div>
-                    <button name='btn' onClick={this.clickEvent}>test</button>
+                    <button name='btn' onClick={this.clickEvent}>{btnName}</button>
                 </div>
             </div>
         )
