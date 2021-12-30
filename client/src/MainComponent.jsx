@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import axios from "axios";
 
 class MainComponent extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -14,7 +15,7 @@ class MainComponent extends Component {
     }
 
     getApi = () => {
-        axios.get("http://localhost:8080/api/hello")
+        axios.get('http://localhost:8080/api/hello')
             .then(res => {
                 console.log(res);
                 this.setState({
@@ -23,14 +24,21 @@ class MainComponent extends Component {
             })
             .catch(res => console.log(res))
     }
+    clickEvent(){
+        alert("main 버튼 클릭");
+    }
 
     render() {
         return (
             <div>
                 Main 페이지
+                <div>
+                    <button name='btn' onClick={this.clickEvent}>test</button>
+                </div>
             </div>
         )
     }
+
 }
 
 export default MainComponent
