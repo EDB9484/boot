@@ -16,7 +16,7 @@ class MainComponent extends Component {
 
     getApi = () => {
         axios.get('http://localhost:8080/api/hello')
-            .then(res => {ddfdff
+            .then(res => {
                 console.log(res);
                 this.setState({
                     message: res.data.message
