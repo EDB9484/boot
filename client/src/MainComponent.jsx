@@ -16,7 +16,7 @@ class MainComponent extends Component {
 
     getApi = () => {
         axios.get('http://localhost:8080/api/hello')
-            .then(res => {
+            .then(res => {ddfdff
                 console.log(res);
                 this.setState({
                     message: res.data.message
@@ -35,6 +35,10 @@ class MainComponent extends Component {
             <div>
                 {mainName}
                 <div>
+                    <div>
+                        <input className='inputId' placeholder={'id입력'}/>
+                        <input placeholder={'pw입력'}/>
+                    </div>
                     <button name='btn' onClick={this.clickEvent}>{btnName}</button>
                 </div>
             </div>
