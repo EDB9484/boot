@@ -6,9 +6,6 @@ import TopMenuComponent from "./router/TopMenuComponent";
 
 function App() {
   return (
-/*      <div>
-        <h1>hello</h1>
-      </div>*/
       <div className="App">
         <div>
           <TopMenuComponent>
